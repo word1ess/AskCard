@@ -6,196 +6,983 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230611182147">
-    <link rel='icon' href='img/svgicons/mini.svg'>
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="js/app.min.js"></script>
     <title>Главная</title>
 </head>
-    <body> 
+    <body>
         <div class="wrapper">
             <header class="header">
-    <div class="header-body">
-        <div class="container">
-            <div class="header-body__row">
-                <div class="header__logo">
-                    <a href="index.html">
-                        <img src="img/svgicons/logo.svg" alt="logo" class="header__img">
-                    </a>
+    <div class="header__inner">
+        <a href="index.html" class="header__logo logotype flex">
+            <img src="img/svgicons/logo.svg" alt="logo">
+        </a>
+
+        <a href="#" class="header__burger pull">Menu</a>
+        <nav class="header__nav">
+            <ul class="nav">
+                <div class="flex">
+                    <li>
+                        <a href="study.html" class="menu-link">студии</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">студии в москве</a></li>
+                            <li><a class="dropdown-item" href="#">студии в санкт-петербурге</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="comments.html">отзывы</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="faq.html">частые вопросы</a>
+                    </li>
                 </div>
-                <div class="header__burger">
-                    <span>
-    
-                    </span>
+                <div class=" flex">
+                    <li>
+                        <a class="nav-link" href="about.html">о компании</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="for-investors.html">инвесторам</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contacts.html">контакты</a>
+                    </li>
                 </div>
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li>
-                            <a href="index.html" class="header__link active">Главная</a>
-                        </li>
-                        <li>
-                            <a href="about.html" class="header__link">О проекте</a>
-                        </li>
-                        <li>
-                            <a href="services.html" class="header__link">Помощь</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="game.html" class="header__btn btn-bg">Войти</a>
-            </div>
-        </div>
+                <a href="#" class="header__phone order-call mobile">
+                    <span class="phone">8 (800) 500 8 500</span>
+                    <span class="call">Заказать звонок</span>
+                </a>
+            </ul>
+        </nav>
+        <a href="#" class="header__phone order-call">
+            <span class="phone">8 (800) 500 8 500</span>
+            <span class="call">Заказать звонок</span>
+        </a>
     </div>
 </header>
-            <main class="content">
-                <section class="intro">
+            <main class="content no-padding">
+                <section class="apartments section">
                     <div class="container">
-                        <div class="intro__container">
-                            <div class="intro-bg">
-                                <div class="intro-bg__container">
-                                    <picture><source srcset="img/main/intro/intro-bg.webp" type="image/webp"><img src="img/main/intro/intro-bg.png" alt="intro-bg__img"></picture>
+                        <h1 class="apartments__title">Квартиры-студии</h1>
+                        <div class="apartments__description">в центре москвы и санкт-петербурга</div>
+                        <div class="apartments__links flex">
+                            <a href="#" class="apartments__link">
+                                <img src="img/index/apartments/moscow.jpg" alt="moscow">
+                                <span>студии в москве</span>
+                            </a>
+                            <a href="#" class="apartments__link">
+                                <img src="img/index/apartments/piter.jpg" alt="piter">
+                                <span>студии в санкт-петербурге</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="decor decor-left flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1"></div>
+                            <div class="decor__box box-2"></div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4 bg-white-005"></div>
+                            <div class="decor__box box-5"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-6 bg-white-005"></div>
+                            <div class="decor__box box-7"></div>
+                        </div>
+                    </div>
+                    <div class="decor decor-img">
+                        <img src="img/index/apartments/bg.jpg" alt="main" class="img">
+                    </div>
+                    <div class="decor decor-right flex black-bg">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus plus-left">
+                                <span class="decor-text decor-text-left">metri</span>
+                            </div>
+                            <div class="decor__box box-2"></div>
+                            <div class="decor__box box-3 bg-white-005"></div>
+                            <div class="decor__box box-4"></div>
+                        </div>
+                    </div>
+
+                </section>
+                <section id="company" class="company section section-info-v1">
+                    <div class="decor decor-right flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1"></div>
+                            <div class="decor__box box-2 bg-gray-fa"></div>
+                            <div class="decor__box box-3">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-4">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                                <span class="decor-text">metri</span>
+                            </div>
+                            <div class="decor__box box-5"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-6 bg-gray-fa"></div>
+                            <div class="decor__box box-7"></div>
+                            <div class="decor__box box-8"></div>
+                            <div class="decor__box box-9">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-10"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-11"></div>
+                            <div class="decor__box box-12">
+                                <img src="img/index/company/company-img3.jpg" alt="company" class="img-3">
+                                <div class="logo-2">
+                                    <img src="img/svgicons/logo-small.svg" alt="logo">
                                 </div>
                             </div>
-                            <div class="intro__row">
-                                <h1 class="intro__title">Взгляните <br /> на тесты <span class="intro__new">по-новому</span></h1>
-                                <p class="intro__subtitle">
-                                    Совершенно новый соревновательный режим в привычных всем нам тестах. Освежите свою память и включите смекалку, создавайте свои собственные задания и соревнуйтесь, кто же лучше!
+                            <div class="decor__box box-13"></div>
+                            <div class="decor__box box-14"></div>
+                        </div>
+
+                    </div>
+                    <div class="decor decor-left">
+                        <div class="decor__box box-1"></div>
+                        <div class="decor__box box-2"></div>
+                        <div class="decor__box box-3 bg-gray-fa"></div>
+                        <div class="decor__box box-4"></div>
+                        <div class="decor__box box-5">
+                            <img src="img/svgicons/plus.svg" alt="" class="plus">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="section__inner flex">
+                            <div class="section__img">
+                                <div class="decor decor-img">
+                                    <div class="flex --dir-col">
+                                        <div class="decor__box box-1">
+                                            <img src="img/svgicons/plus.svg" alt="" class="plus">
+                                        </div>
+                                        <div class="decor__box box-2">
+                                            <img src="img/svgicons/plus.svg" alt="" class="plus">
+                                            <span class="decor-text">metri</span>
+                                        </div>
+                                        <div class="decor__box box-3"></div>
+                                    </div>
+                                    <div class="flex --dir-col ">
+                                        <div class="decor__box box-4"></div>
+                                        <div class="decor__box box-5"></div>
+                                    </div>
+
+                                </div>
+                                <img src="img/index/company/company-img.jpg" alt="company" class="img-1">
+                                <img src="img/index/company/company-img2.jpg" alt="company" class="img-2">
+                            </div>
+                            <div class="section__info">
+                                <h2 class="section__subtitle">Метры - это</h2>
+                                <p>
+                                    Инвестиционно-строительная компания,
+                                    предлагающая квартиры-студии площадью от
+                                    12м2 до 38м2 с готовой отделкой в ЦАО Москвы
+                                    и историческом центре Санкт-Петербурга.
                                 </p>
-                                <div class="intro__btns-row">
-                                    <a href="game.html" class="intro__btn btn-bg">Попробовать</a>
-                                    <a href="#" class="intro__btn btn-border">Узнать больше</a>
+                                <p>
+                                    Наш продукт - это ликвидные инвестиционные объекты для готового арендного бизнеса и
+                                    проживания в престижных районах столиц.
+                                </p>
+                                <p>
+                                    Мы реализуем уникальные перепланировки крупногабаритных квартир и предлагаем
+                                    на рынке недвижимости высоколиквидный продукт - квартиры-студии.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="advantages section">
+                    <div class="container">
+                        <h2 class="section__subtitle">
+                            <span class="orange-font">Преимущества</span><span class="text">наших объектов</span>
+                        </h2>
+                        <div class="advantages__inner flex">
+                            <div class="advantages__items flex">
+                                <div class="advantages__item">
+                                    <div class="item-header">
+                                        <div class="icon">
+                                            <img src="img/svgicons/compliant-1.svg" alt="compliant">
+                                        </div>
+                                        <div class="number">01<i>/</i></div>
+                                    </div>
+                                    <div class="name">Быстрое и законное оформление</div>
+                                </div>
+                                <div class="advantages__item">
+                                    <div class="item-header">
+                                        <div class="icon">
+                                            <img src="img/svgicons/business-and-finance-1.svg" alt="business">
+                                        </div>
+                                        <div class="number">02<i>/</i></div>
+                                    </div>
+                                    <div class="name">Высокая <br>ликвидность</div>
+                                </div>
+                                <div class="advantages__item">
+                                    <div class="item-header">
+                                        <div class="icon">
+                                            <img src="img/svgicons/installation-1.svg" alt="installation">
+                                        </div>
+                                        <div class="number">03<i>/</i></div>
+                                    </div>
+                                    <div class="name">Гарантия на ремонт <br>2 года</div>
+                                </div>
+                                <div class="advantages__item">
+                                    <div class="item-header">
+                                        <div class="icon">
+                                            <img src="img/svgicons/blueprint-1.svg" alt="blueprint">
+                                        </div>
+                                        <div class="number">04<i>/</i></div>
+                                    </div>
+                                    <div class="name">Дизайнерская отделка <br>под ключ</div>
+                                </div>
+                                <div class="advantages__item">
+                                    <div class="item-header">
+                                        <div class="icon">
+                                            <img src="img/svgicons/capa-1.svg" alt="capa">
+                                        </div>
+                                        <div class="number">05<i>/</i></div>
+                                    </div>
+                                    <div class="name">У наших объектов идеальная шумоизоляция</div>
+                                </div>
+                                <div class="advantages__item">
+                                    <div class="item-header">
+                                        <div class="icon">
+                                            <img src="img/svgicons/money-back-guarantee-1.svg" alt="money">
+                                        </div>
+                                        <div class="number">06<i>/</i></div>
+                                    </div>
+                                    <div class="name">Срок окупаемости при сдаче в аренду – 8 лет</div>
                                 </div>
                             </div>
-                            <div class="intro__scroll">
-                                <div class="intro__scroll-mouse"></div>
-                                <div class="intro__scroll-down"></div>
+                            <div class="advantages__img">
+                                <div class="logo-2">
+                                    <img src="img/svgicons/logo-small.svg" alt="logo">
+                                </div>
+                                <img src="img/index/advantages/advantages-img1.jpg" alt="img">
+                                <a href="http://" class="btn btn-orange call-modal">
+                                    <img src="img/svgicons/interview-1.svg" alt="interview">
+                                    получить консультацию
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decor decor-img">
+                        <img src="img/index/advantages/advantages-img2.jpg" alt="advantages" class="img-2">
+                    </div>
+                    <div class="decor decor-right flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus plus-left">
+                            </div>
+                            <div class="decor__box box-2">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus plus-left">
+                                <span class="decor-text decor-text-left">metri</span>
+                            </div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4"></div>
+                        </div>
+                    </div>
+                    <div class="decor decor-left flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1"></div>
+                            <div class="decor__box box-2"></div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-5"></div>
+                            <div class="decor__box box-6"></div>
+                            <div class="decor__box box-7"></div>
+                            <div class="decor__box box-8"></div>
+                        </div>
+                        <div class="flex --dir-col --just-end">
+                            <div class="decor__box box-9">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                        </div>
+                        <div class="flex --dir-col --just-end">
+                            <div class="decor__box box-10"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="offers section left">
+                    <div class="decor decor-left flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1"></div>
+                            <div class="decor__box box-2"></div>
+                            <div class="decor__box box-3 bg-gray-fa"></div>
+                            <div class="decor__box box-4"></div>
+                        </div>
+                        <div class="flex --dir-col --just-space">
+                            <div class="decor__box box-5"></div>
+                            <div class="decor__box box-6"></div>
+                        </div>
+                    </div>
+                    <div class="decor decor-right flex">
+                        <div class="flex --dir-col --just-space">
+                            <div class="decor__box box-5 bg-gray-fa"></div>
+                            <div class="decor__box box-6"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1"></div>
+                            <div class="decor__box box-2 bg-gray-fa"></div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="watch-more">
+                            <span>смотреть все предложения</span>
+                        </a>
+                        <h2 class="section__subtitle">
+                            <span class="simple-text">предложения</span>
+                            <span class="orange-font">в москве</span>
+                        </h2>
+                        <div class="offers__items flex swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers-img1.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers-img2.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers-img3.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers-img4.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="advantages">
+                <section class="offers section ">
+                    <div class="decor decor-left flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1"></div>
+                            <div class="decor__box box-2"></div>
+                            <div class="decor__box box-3 bg-gray-fa"></div>
+                            <div class="decor__box box-4"></div>
+                        </div>
+                        <div class="flex --dir-col --just-space">
+                            <div class="decor__box box-5"></div>
+                            <div class="decor__box box-6"></div>
+                        </div>
+                    </div>
+                    <div class="decor decor-right flex">
+                        <div class="flex --dir-col --just-space">
+                            <div class="decor__box box-5 bg-gray-fa"></div>
+                            <div class="decor__box box-6 bg-gray-fa">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1"></div>
+                            <div class="decor__box box-2"></div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4"></div>
+                        </div>
+                    </div>
                     <div class="container">
-                        <div class="advantages__row">
-                            <h2 class="advantages__title">Не только функционально, но и удобно</h2>
-                            <div class="advantages__items items-advantages">
-                                <div class="advantages__item items-advantages__row">
-                                    <div class="items-advantages__icon">
-                                        <div class="items-advantages__icon-container">
-                                            <picture><source srcset="img/main/advantages/advantages-icon-1.webp" type="image/webp"><img src="img/main/advantages/advantages-icon-1.png" alt="Подключайтесь"></picture>
+                        <a href="#" class="watch-more">
+                            <span>смотреть все предложения</span>
+                        </a>
+                        <h2 class="section__subtitle">
+                            <span class="simple-text">предложения</span>
+                            <span class="orange-font">В санкт-петербурге</span>
+                        </h2>
+                        <div class="offers__items flex swiper offers-second">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers2-img1.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
                                         </div>
                                     </div>
-                                    <h3 class="items-advantages__title">Подключайтесь</h3>
-                                    <p class="items-advantages__text">
-                                        Дождитесь приглашения  
-                                        и подключайтесь к увлекательному 
-                                        соревнованию
-                                    </p>
-                                    <a href="#" class="items-advantages__link btn-bg">Попробовать</a>
-                                    <div class="items-advantages__wave">
-                                        <picture><source srcset="img/main/advantages/advatnages-wave-1.webp" type="image/webp"><img src="img/main/advantages/advatnages-wave-1.png" alt=""></picture>
+                                </a>
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers2-img2.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers2-img3.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="offers__item item swiper-slide">
+                                    <div class="item-squares">14 м<sup>2</sup></div>
+                                    <div class="item-img">
+                                        <img src="img/index/offers/offers2-img4.jpg" alt="image">
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-price">14 200 400 ₽</div>
+                                        <div class="item-location">
+                                            <span class="metro">м. Чеховская</span>
+                                            <span class="gray-font">5 минут пешком</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="questions" class="wework section">
+                    <div class="container">
+                        <div class="num-items__inner">
+                            <h2 class="num-items__title section__subtitle">Как мы работаем?</h2>
+                            <div class="num-items">
+                                <div class="num-items__item num-item">
+                                    <div class="num-item__number">01<i>/</i></div>
+                                    <div>
+                                        <div class="num-item__title">Подбор квартиры</div>
+                                        <div class="num-item__text">
+                                            Рассматриваем для покупки только проверенные
+                                            квартиры в лучших районах в шаговой
+                                            доступности от метро
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="advantages__item items-advantages__row">
-                                    <div class="items-advantages__icon">
-                                        <div class="items-advantages__icon-container">
-                                            <picture><source srcset="img/main/advantages/advantages-icon-2.webp" type="image/webp"><img src="img/main/advantages/advantages-icon-2.png" alt="Соревнуйтесь"></picture>
-                                        </div>
-                                    </div>
-                                    <h3 class="items-advantages__title">Соревнуйтесь</h3>
-                                    <p class="items-advantages__text">
-                                        Каждая новая игра - это маленькое соревнование, 
-                                        а каждый неправильный ответ - это маленький проигрыш
-                                    </p>
-                                    <a href="#" class="items-advantages__link btn-bg">Попробовать</a>
-                                    <div class="items-advantages__wave">
-                                        <picture><source srcset="img/main/advantages/advatnages-wave-2.webp" type="image/webp"><img src="img/main/advantages/advatnages-wave-2.png" alt=""></picture>
+                                <div class="num-items__item num-item">
+                                    <div class="num-item__number">02<i>/</i></div>
+                                    <div>
+                                        <div class="num-item__title">Покупка квартиры</div>
+                                        <div class="num-item__text">
+                                            Выкупаем крупногабаритную квартиру и
+                                            перестраиваем ее в квартиры-студии</div>
                                     </div>
                                 </div>
-                                <div class="advantages__item items-advantages__row">
-                                    <div class="items-advantages__icon">
-                                        <div class="items-advantages__icon-container">
-                                            <picture><source srcset="img/main/advantages/advantages-icon-3.webp" type="image/webp"><img src="img/main/advantages/advantages-icon-3.png" alt="Получайте баллы"></picture>
-                                        </div>
+                                <div class="num-items__item num-item">
+                                    <div class="num-item__number">03<i>/</i></div>
+                                    <div>
+                                        <div class="num-item__title">Перепланировка и<br>отделка</div>
+                                        <div class="num-item__text">
+                                            Делаем перепланировку и выполняем ремонт “Под ключ”</div>
                                     </div>
-                                    <h3 class="items-advantages__title">Получайте баллы</h3>
-                                    <p class="items-advantages__text">
-                                        За каждый правильный ответ Вы получаете балл 
-                                        и поднимаетесь в списке лидеров. Побеждает сильнейший!
-                                    </p>
-                                    <a href="#" class="items-advantages__link btn-bg">Попробовать</a>
-                                    <div class="items-advantages__wave">
-                                        <picture><source srcset="img/main/advantages/advatnages-wave-3.webp" type="image/webp"><img src="img/main/advantages/advatnages-wave-3.png" alt=""></picture>
+                                </div>
+                                <div class="num-items__item num-item">
+                                    <div class="num-item__number">04<i>/</i></div>
+                                    <div>
+                                        <div class="num-item__title">Согласования<br>документов</div>
+                                        <div class="num-item__text">Узакониваем абсолютно все<br>
+                                            изменения в квартире</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="decor decor-left flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-2">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                                <span class="decor-text">metri</span>
+                            </div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-5"></div>
+                            <div class="decor__box box-6"></div>
+                            <div class="decor__box box-7"></div>
+                            <div class="decor__box box-8">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decor decor-img">
+                        <img src="img/index/wework/wework-img1.jpg" alt="wework" class="img">
+                    </div>
+                    <div class="decor decor-right flex">
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-2 bg-gray-fa">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-3"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-4"></div>
+                            <div class="decor__box box-5"></div>
+                            <div class="decor__box box-6">
+                                <span class="decor-text decor-text-left">metri</span>
+                            </div>
+                            <div class="decor__box box-7"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-8"></div>
+                            <div class="decor__box box-9"></div>
+                            <div class="decor__box box-10">
+                                <img src="img/index/wework/wework-img2.jpg" alt="wework" class="img-2">
+                                <div class="logo-2">
+                                    <img src="img/svgicons/logo-small.svg" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section class="info">
+                <section id="comments" class="section section__slider comments">
                     <div class="container">
-                        <div class="info__row">
-                            <div class="info__item">
-                                <div class="info__image info__image__ordered">
-                                    <picture><source srcset="img/main/info/info-item-1.webp" type="image/webp"><img src="img/main/info/info-item-1.png" alt="info-item-1"></picture>
+                        <h2 class="comments__title section__subtitle">
+                            <span class="orange-font">Отзывы</span>
+                            <span>клиентов</span>
+                        </h2>
+                        <div class="comments__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="comments__comment">
+                                        <div class="plyr__video-embed" id="player">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/fdhrXAUC0W4?si=Vp_cB6aE9UeGNaf8"
+                                                allowtransparency></iframe>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="info__text">
-                                    <h3 class="info__title">Выбирайте <br /> любые категории</h3>
-                                    <p>В сервисе собран десяток категорий на любой вкус: от информатики до медицицы, от тестов для школьников до тестов для студентов</p>
-                                    <a href="#" class="info__btn btn-bg">Узнать больше</a>
+                                <div class="swiper-slide">
+                                    <div class="comments__comment">
+                                        <!-- <img src="./img/comments-img.jpg" alt="comments"> -->
+
+                                        <div class="plyr__video-embed" id="player">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/fdhrXAUC0W4?si=Vp_cB6aE9UeGNaf8"
+                                                allowtransparency></iframe>
+                                        </div>
+
+                                    </div>
+                                    <!-- <button type="button" id="play_btn">Play</button> -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comments__comment">
+                                        <!-- <img src="./img/comments-img.jpg" alt="comments"> -->
+
+                                        <div class="plyr__video-embed" id="player">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/fdhrXAUC0W4?si=Vp_cB6aE9UeGNaf8"
+                                                allowtransparency></iframe>
+                                        </div>
+
+                                    </div>
+                                    <!-- <button type="button" id="play_btn">Play</button> -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comments__comment">
+                                        <!-- <img src="./img/comments-img.jpg" alt="comments"> -->
+
+                                        <div class="plyr__video-embed" id="player">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/fdhrXAUC0W4?si=Vp_cB6aE9UeGNaf8"
+                                                allowtransparency></iframe>
+                                        </div>
+
+                                    </div>
+                                    <!-- <button type="button" id="play_btn">Play</button> -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comments__comment">
+                                        <!-- <img src="./img/comments-img.jpg" alt="comments"> -->
+
+                                        <div class="plyr__video-embed" id="player">
+                                            <iframe
+                                                src="https://www.youtube.com/embed/fdhrXAUC0W4?si=Vp_cB6aE9UeGNaf8"
+                                                allowtransparency></iframe>
+                                        </div>
+
+                                    </div>
+                                    <!-- <button type="button" id="play_btn">Play</button> -->
                                 </div>
                             </div>
-                            <div class="info__item">
-                                <div class="info__image">
-                                    <picture><source srcset="img/main/info/info-item-2.webp" type="image/webp"><img src="img/main/info/info-item-2.png" alt="info-item-2"></picture>
-                                </div>
-                                <div class="info__text info__text__right">
-                                    <h3 class="info__title">Создавайте <br /> собственные тесты</h3>
-                                    <p>В сервис встроен удобный конструктор для создания Ваших собственных тестов на любую тему, которая нравится именно Вам</p>
-                                    <a href="#" class="info__btn btn-bg">Узнать больше</a>
+                            <div class="controls-slider">
+                                <div class="swiper-scrollbar"></div>
+                                <div class="slider-arrows">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
                                 </div>
                             </div>
-                            <div class="info__item">
-                                <div class="info__image info__image__ordered">
-                                    <picture><source srcset="img/main/info/info-item-3.webp" type="image/webp"><img src="img/main/info/info-item-3.png" alt="info-item-3"></picture>
+                        </div>
+                    </div>
+                </section>
+                <section class="application section">
+                    <div class="container">
+                        <div class="application__inner">
+                            <div class="application__info">
+                                <h2 class="application__title section__subtitle">
+                                    Хотите подберем вам лучший объект?
+                                </h2>
+                                <form action="#" class="application__form form">
+                                    <p class="form-text">
+                                        Оставьте заявку и наши менеджеры
+                                        проконсультируют вас по любым вопросам
+                                    </p>
+                                    <div class="form__fields">
+                                        <div class="form__field form-phone">
+                                            <label>Телефон</label>
+                                            <input type="text"
+                                                placeholder="Введите свой телефон"
+                                                name="phone"
+                                                required="required"
+                                                class="required-field phone">
+                                            <div class="form__bg"></div>
+                                        </div>
+                                        <div class="form__field form-select">
+                                            <select class="select-city" name="state">
+                                                <option value="mos">Москва</option>
+                                                <option value="spb">Санкт-Петербург</option>
+                                            </select>
+                                            <div class="form__bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form__action">
+                                        <input type="submit" value="Отправить" class="btn btn-submit">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="application__img">
+                                <img src="img/index/applications/applications-img.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decor decor-left flex --dir-col">
+                        <div class="flex">
+                            <div class="decor__box box-1">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-2 bg-white-005"></div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="decor__box box-5"></div>
+                            <div class="decor__box box-6"></div>
+                            <div class="decor__box box-7"></div>
+                            <div class="decor__box box-8"></div>
+                        </div>
+                        <div class="flex">
+                            <div class="decor__box box-9"></div>
+                        </div>
+                        <div class="flex">
+                            <div class="decor__box box-10 bg-white-005">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="decor__box box-11">
+                                <span class="decor-text">metri</span>
+                            </div>
+                            <div class="decor__box box-12"></div>
+                            <div class="decor__box box-13">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus plus-right-top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decor decor-img">
+                        <img src="img/index/applications/applications-img2.jpg" alt="main" class="img">
+                    </div>
+                    <div class="decor decor-right flex">
+                        <div class="flex --dir-col --just-end">
+                            <div class="decor__box box-6 bg-white-005"></div>
+                            <div class="decor__box box-7"></div>
+                        </div>
+                        <div class="flex --dir-col">
+                            <div class="decor__box box-1">
+
+                            </div>
+                            <div class="decor__box box-2 bg-white-005">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus plus-left">
+                                <span class="decor-text decor-text-left">metri</span>
+                            </div>
+                            <div class="decor__box box-3"></div>
+                            <div class="decor__box box-4">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus plus-left">
+                            </div>
+                            <div class="decor__box box-5"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="investors" class="offers-investors section section-info-v2">
+                    <div class="container">
+                        <div class="section__inner">
+                            <div class="section__img">
+                                <img src="img/index/investors/investors-img1.jpg" alt="img" class="section__bg-img">
+                                <img src="img/index/investors/investors-img2.jpg" alt="img" class="section__content-img">
+                            </div>
+                            <div class="section__info">
+                                <h2 class="section__subtitle">
+                                    <span class="orange-font">предложения</span>
+                                    <span>для инвесторов</span>
+                                </h2>
+                                <p>
+                                    Покупка квартир в развивающихся районах: Инвестирование в квартиры в районах,
+                                    где происходит строительство новых инфраструктурных объектов,
+                                    может быть выгодным.
+                                </p>
+                                <p>
+                                    Новые школы, больницы,
+                                    торговые центры и транспортные маршруты способствуют росту цен на недвижимость в округе.
+                                    Таким образом, покупка квартир в этих районах может привести к значительному росту стоимости в будущем.
+                                </p>
+                                <a href="#" class="btn-orange">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decor decor-left">
+                        <div class="flex">
+                            <div class="decor__box box-1">
+                            </div>
+                            <div class="decor__box box-2 bg-white-005">
+                            </div>
+                            <div class="decor__box box-3">
+                            </div>
+                        </div>
+                        <div class="decor__box box-4">
+                        </div>
+                        <div class="decor__box box-5 bg-white-005">
+                        </div>
+                        <div class="decor__box box-6">
+                        </div>
+                        <div class="decor__box box-6">
+                        </div>
+                    </div>
+                    <div class="decor decor-right">
+                        <div class="flex">
+                            <div class="decor__box box-1">
+                            </div>
+                            <div class="decor__box box-2">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-3 bg-fafafa">
+                            </div>
+                            <div class="decor__box box-4">
+                            </div>
+                        </div>
+                        <div class="flex --just-end">
+                            <div class="decor__box box-6 bg-fafafa">
+                            </div>
+                            <div class="decor__box box-7">
+                            </div>
+                            <div class="decor__box box-8">
+                                <img src="img/index/investors/investors-img3.jpg" alt="main" class="img">
+                                <div class="logo-2">
+                                    <img src="img/svgicons/logo-small.svg" alt="logo">
                                 </div>
-                                <div class="info__text">
-                                    <h3 class="info__title">Следите <br /> за  своей статистикой</h3>
-                                    <p>В окне “Статистика” Вы сможете легко узнать свои результаты и полученный опыт с течением времени, а также узнать, на каком месте Вы среди своих друзей</p>
-                                    <a href="#" class="info__btn btn-bg">Узнать больше</a>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="decor__box box-9">
+                            </div>
+                            <div class="decor__box box-10">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                            </div>
+                            <div class="decor__box box-11">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="decor__box box-12">
+                            </div>
+                            <div class="decor__box box-13">
+
+                            </div>
+                            <div class="decor__box box-14">
+                                <img src="img/svgicons/plus.svg" alt="" class="plus">
+                                <span class="decor-text decor-text-left">metri</span>
+                            </div>
+                            <div class="decor__box box-15">
+                            </div>
+                        </div>
+                        <div class="flex --just-end">
+                            <div class="decor__box box-16 bg-fafafa">
+                            </div>
+                            <div class="decor__box box-17">
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
-            <footer class="footer">
-    <div class="container">
-        <div class="footer__row">
-            <div class="footer__top">
+            <footer id="contacts" class="footer">
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__left">
                 <div class="footer__logo">
-                    <a href="#">
-                        <img src="img/svgicons/logo-white.svg" alt="" class="footer__img">
-                    </a>
+                    <div class="logotype flex">
+                        <img src="img/svgicons/logo.svg" alt="logo">
+                    </div>
+                    <div class="footer__description">
+                        Комфортные для проживания и ликвидные для
+                        инвестиций квартиры-студии в историческом
+                        центре Москвы и Санкт-Петербурга
+                    </div>
                 </div>
-                <div class="footer__nav">
+            </div>
+            <div class="footer__right">
+                <div class="footer__lists">
                     <ul class="footer__list">
                         <li>
-                            <a href="index.html" class="footer__link">Главная</a>
+                            <a href="http://">студии в москве</a>
                         </li>
                         <li>
-                            <a href="about.html" class="footer__link">О проекте</a>
+                            <a href="http://">студии в санкт-петербурге</a>
                         </li>
                         <li>
-                            <a href="help.html" class="footer__link">Помощь</a>
+                            <a href="http://">Отзывы</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="http://">Частые вопросы</a>
+                        </li>
+                        <li>
+                            <a href="">о компании</a>
+                        </li>
+                        <li>
+                            <a href="">инвесторам</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">Агенствам</a>
+                        </li>
+                        <li>
+                            <a href="">Команда</a>
+                        </li>
+                        <li>
+                            <a href="">контакты</a>
                         </li>
                     </ul>
                 </div>
-                <a class="footer__btn btn-bg">Войти</a>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__phone order-call">
+                        <span class="phone">8 (800) 500 8 500</span>
+                        <span class="call">Заказать звонок</span>
+                    </a>
+                    <div class="location">
+                        <div class="locatiob-tabs">
+                            <p data-city="moscow">москва</p>
+                            <p data-city="piter">санкт-петербург</p>
+                        </div>
+
+                        <div data-location="moscow" class="address">
+                            <div class="city">Москва</div>
+                            <div class="description">
+                                ул. Большая Полянка, д. 7/10,<br>
+                                ст. м. “Полянка”<br>
+                                ИНН 7811785553
+                            </div>
+                            <div class="social">
+                                <a href="" class="facebook"><img src="img/svgicons/facebook.svg" alt=""></a>
+                                <a href="" class="instagram"><img src="img/svgicons/inst.svg" alt=""></a>
+                                <a href="" class="telegram"><img src="img/svgicons/tg.svg" alt=""></a>
+                                <a href="" class="vkontakte"><img src="img/svgicons/vk.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div data-location="piter" class="address">
+                            <div class="city">Санкт-Петербург</div>
+                            <div class="description">
+                                ул. 5-я Советская, д. 7-9,<br>
+                                ст. м. “Площадь Восстания”<br>
+                                ИНН 7811785553
+                            </div>
+                            <div class="social">
+                                <a href="" class="facebook"><img src="img/svgicons/facebook.svg" alt=""></a>
+                                <a href="" class="instagram"><img src="img/svgicons/inst.svg" alt=""></a>
+                                <a href="" class="telegram"><img src="img/svgicons/tg.svg" alt=""></a>
+                                <a href="" class="vkontakte"><img src="img/svgicons/vk.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer__copyright">© askcard 2022 - Все права защищены</div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container flex --just-space --align-center">
+            <div class="copyright">
+                <!-- &copy; -->
+                Все права защищены 2023 г.
+            </div>
+            <a class="footer__bottom-link" href="http://">Политика конфиденциальности</a>
         </div>
     </div>
 </footer>
+
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230611182147"></script>
-        <script src="js/app.min.js?_v=20230611182147"></script>
     </body>
 
 </html>
