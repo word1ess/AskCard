@@ -1,0 +1,11 @@
+.users__pagination {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin: 0px 0px 20px;
+  cursor: pointer;
+}
+.users__pagination .active {
+  font-weight: bold;
+  color: bisque;
+}

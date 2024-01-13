@@ -1,0 +1,27 @@
+.content__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 0 0 150px;
+  background-color: bisque;
+  padding: 30px;
+  border-radius: 21px;
+}
+.content__aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  color: black;
+}
+
+.activeLink {
+  color: rgb(177, 109, 109);
+}
+
+.item {
+  font-size: 18px;
+}

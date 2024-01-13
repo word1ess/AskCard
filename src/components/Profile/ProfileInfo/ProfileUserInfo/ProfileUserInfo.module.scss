@@ -1,0 +1,25 @@
+.contentProfile {
+    &__name {
+        font-size: 32px;
+        color: #000;
+        font-weight: 900;
+        margin: 0px 0px 5px;
+    }
+    &__birth,
+    &__city,
+    &__edu,
+    &__web {
+        font-size: 18px;
+        color: grey;
+        margin: 0px 0px 16px;
+    }
+    &__status {
+        font-size: 16px;
+        margin: 0px 0px 32px;
+        color: rgb(147, 106, 56);
+    }
+}
+
+.content__profileText {
+    flex: 1 1 auto;
+}

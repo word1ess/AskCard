@@ -1,0 +1,110 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background: #fff;
+    width: 630px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 0 auto;
+
+    & a {
+        color: rgb(249, 179, 93);
+    }
+
+    & h1 {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 33px;
+        margin: 0px 0px 50px;
+        color: rgb(249, 179, 93);
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 22px; */
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        margin-bottom: 20px;
+
+        & label {
+            color: black;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23px; /* 164.286% */
+            margin-left: 20px;
+        }
+
+        & input {
+            display: block;
+            border-radius: 90px;
+            border: 2px solid rgb(249, 179, 93);
+            background: #fff;
+            height: 33px;
+            width: 100%;
+            font-size: 18px;
+            color: black;
+            padding: 6px 26px;
+            width: 260px;
+        }
+
+        &.passwd {
+            display: flex;
+        }
+
+        & p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 23px; /* 164.286% */
+            text-align: right;
+        }
+    }
+
+    &__btn {
+        width: 155px;
+        height: 50px;
+        border-radius: 90px;
+        background: rgb(249, 179, 93);
+        color: #fff;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 140% */
+        margin-top: 13px;
+        align-items: center;
+        text-align: center;
+        /* padding-top: 10px; */
+
+        &:hover {
+            background: rgb(249, 179, 93);
+            transition: all 300ms ease-in;
+        }
+        &:disabled:hover {
+            background: rgb(247, 204, 152);
+        }
+        &:disabled {
+            background: rgb(247, 204, 152);
+        }
+    }
+
+    &__register {
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23px; /* 164.286% */
+        margin-top: 10px;
+    }
+}

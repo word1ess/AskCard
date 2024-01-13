@@ -1,0 +1,10 @@
+.dialog__members {
+  flex: 0 0 150px;
+}
+
+.row.other {
+  justify-content: flex-end;
+}
+.row.other__member {
+  order: 2;
+}

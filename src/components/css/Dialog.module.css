@@ -1,0 +1,14 @@
+.content__dialog {
+  padding: 20px 30px 30px;
+  position: relative;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.dialog__row {
+  display: flex;
+  gap: 32px;
+}

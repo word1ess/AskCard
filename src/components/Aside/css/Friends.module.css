@@ -1,0 +1,6 @@
+.friends__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 60px 0px 0px;
+}

@@ -1,0 +1,23 @@
+.content__dialog{
+    padding: 20px 30px 30px;
+    position: relative;
+
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     top: 50%;
+    //     right: 0;
+    //     background: grey;
+    //     width: 2px;
+    //     height: 85%;
+    //     transform: translate(0%, -50%);
+    // }
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+.dialog__row{
+    display: flex;
+    gap: 32px;
+}

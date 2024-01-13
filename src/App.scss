@@ -1,0 +1,33 @@
+.container {
+    flex: 1 1 auto;
+    max-width: 1924px;
+    margin: 0 auto;
+    z-index: 1000;
+    padding: 0 30px;
+    height: 100%;
+}
+.content{
+    display: flex;
+    height: 100%;
+    position: relative;
+    padding: 20px 0px;
+    flex: 1 1 auto;
+
+    &__row{
+        display: flex;
+        gap: 20px;
+        height: 100%;
+        flex: 1 1 auto;
+    }
+}
+
+
+
+
+.footer{
+    background: rgb(5, 7, 5);
+    height: 80px;
+}
+.other{
+    justify-content: flex-end;
+}
