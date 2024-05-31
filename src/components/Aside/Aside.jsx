@@ -1,6 +1,6 @@
 import classes from "./Aside.module.scss";
 import { NavLink } from "react-router-dom";
-
+import logo from "./logo.svg";
 const setActive = ({ isActive }) => (isActive ? classes.activeLink : "");
 
 const Aside = (props) => {
@@ -8,7 +8,7 @@ const Aside = (props) => {
     <aside className={classes.content__aside}>
       <div className={classes.content__aside__logo}>
         <NavLink to="/" className={setActive}>
-          <img src="image/svgicons/logo.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </NavLink>
       </div>
       <ul>
@@ -17,6 +17,9 @@ const Aside = (props) => {
         </NavLink>
         <NavLink to="/profile" className={setActive}>
           <li className={classes.item}>Профиль</li>
+        </NavLink>
+        <NavLink to="/users" className={setActive}>
+          <li className={`${classes.item}`}>Пользователи</li>
         </NavLink>
         <NavLink to="/settings" className={setActive}>
           <li className={classes.item}>Настройки</li>

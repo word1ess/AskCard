@@ -276,8 +276,7 @@ const gameReducer = (state = initalState, action) => {
           isShowResult: true,
         },
       };
-
-    case RENDER_QUESTION: {
+    case RENDER_QUESTION:
       return {
         ...state,
         userStats: {
@@ -285,7 +284,6 @@ const gameReducer = (state = initalState, action) => {
           indexOfAnswer: ++state.userStats.indexOfAnswer,
         },
       };
-    }
 
     default:
       return state;
@@ -311,7 +309,7 @@ export const checkUserAnswer = (userAnswer, correctAnswer) => {
 
 export const renderNextQuestion = () => {
   return (dispatch) => {
-    dispatch(startRenderQuestion);
+    dispatch(startRenderQuestion());
   };
 };
 

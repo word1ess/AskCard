@@ -11,7 +11,7 @@
     border-radius: 50%;
     width: calc(48px * 5);
     height: calc(48px * 5);
-    color: bisque;
+    color: #5d39ed;
 }
 .loader:before,
 .loader:after {
@@ -27,7 +27,7 @@
     animation: 1s spin linear infinite;
 }
 .loader:after {
-    color: black;
+    color: #dcccff;
     transform: rotateY(70deg);
     animation-delay: 0s;
 }

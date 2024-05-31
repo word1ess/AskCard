@@ -25,6 +25,7 @@ const App = (props) => {
           <Route path="settings" element={<Settings />} />
           <Route path="users" element={<UsersContainer />} />
           <Route path="login" element={<Login />} />
+          <Route path="users" element={<UsersContainer />} />
         </Route>
       </Routes>
     </BrowserRouter>

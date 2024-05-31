@@ -8,7 +8,15 @@ const MyPosts = (props) => {
   }
 
   let postsContent = props.posts.map((post) => (
-    <Post img={post.img} message={post.message} countLikes={post.countLikes} />
+    <Post
+      img={
+        post.img
+          ? post.img
+          : "https://cdn1.iconfinder.com/data/icons/business-charts/512/customer-1024.png"
+      }
+      message={post.message}
+      countLikes={post.countLikes}
+    />
   ));
 
   let postText = React.createRef();

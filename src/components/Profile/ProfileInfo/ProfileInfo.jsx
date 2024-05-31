@@ -10,9 +10,9 @@ const ProfileInfo = (props) => {
       <div className={classes.content__profile}>
         <ProfileImg
           image={
-            props.profileInfo.photos
+            props.profileInfo.photos.large
               ? props.profileInfo.photos.large
-              : "https://mta-travel.ru/wp-content/uploads/2018/09/footer_img_bg-1024x271.png"
+              : "https://cdn1.iconfinder.com/data/icons/business-charts/512/customer-1024.png"
           }
         />
         <ProfileUserInfo

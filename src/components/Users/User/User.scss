@@ -12,13 +12,13 @@
             min-width: 100px;
             height: fit-content;
             padding: 5px 15px;
-            background: bisque;
-            color: black;
+            background: #5d39ed;
+            color: white;
             font-size: 14px;
+            border-radius: 12px;
 
             &:disabled {
-                background: rgb(255, 239, 221);
-                color: rgb(86, 86, 86);
+                background: #5d39ed5f;
             }
         }
     }
@@ -46,7 +46,7 @@
         justify-content: space-between;
         padding: 20px 20px;
         border-radius: 20px;
-        border: 2px solid bisque;
+        border: 2px solid #7857ff;
         font-size: 18px;
         color: rgb(36, 36, 29);
 
