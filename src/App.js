@@ -10,6 +10,7 @@ import UsersContainer from "./components/Users/UsersContainer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Game from "./components/Game/Game";
+import Register from "./components/Register/Register";
 
 const App = (props) => {
   return (
@@ -25,6 +26,7 @@ const App = (props) => {
           <Route path="settings" element={<Settings />} />
           <Route path="users" element={<UsersContainer />} />
           <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="users" element={<UsersContainer />} />
         </Route>
       </Routes>
