@@ -3,7 +3,7 @@ import axios from "axios";
 const samuraiJS = axios.create({
   withCredentials: true,
   headers: {
-    "API-KEY": "e8d5a02d-7413-4abc-b45b-ad570ea66dd7",
+    "API-KEY": "3c4b5acc-33d2-47eb-b144-c3a8cf14957f",
   },
   baseURL: "https://social-network.samuraijs.com/api/1.0/",
 });

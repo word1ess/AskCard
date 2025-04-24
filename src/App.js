@@ -1,4 +1,5 @@
 import "./App.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProfileContainer from "./components/Profile/Profile";
 import DialogsContainer from "./components/Dialogs/Dialogs";
 import Music from "./components/Music/Music";
@@ -7,7 +8,6 @@ import News from "./components/News/News";
 import Index from "./components/Index/Index";
 import Layout from "./components/Layout/Layout";
 import UsersContainer from "./components/Users/UsersContainer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Game from "./components/Game/Game";
 import Register from "./components/Register/Register";
